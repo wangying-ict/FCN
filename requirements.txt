@@ -1,0 +1,5 @@
+# pip install -U -r requirements.txt
+Pillow
+matplotlib
+tensorflow
+numpy
