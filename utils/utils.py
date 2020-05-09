@@ -130,15 +130,13 @@ def filter_split(w_array, stride, out_num, in_num, row, col):
     w_array = pad_4d_data(w_array, 0, 0, 0, 0, spilt_col_num * stride - col, 0, spilt_row_num * stride - row, 0)
     # transform
     for cur_spilt_num in range(spilt_filter_num):
-        for cur_filter_num in range(original_filter_num):
-            for cur_map_num in range(original_map_num):
-                for cur_row_num in range(spilt_row_num):
-                    for cur_col_num in range(spilt_col_num):
-                        trans_w_array[cur_spilt_num,
-                                      cur_filter_num, cur_map_num, spilt_row_num - cur_row_num - 1,
-                                      spilt_col_num - cur_col_num - 1] = w_array[
-                            cur_filter_num, cur_map_num, stride * cur_row_num + cur_spilt_num // stride,
-                            stride * cur_col_num + cur_spilt_num % stride]
+        for cur_row_num in range(spilt_row_num):
+            for cur_col_num in range(spilt_col_num):
+                trans_w_array[cur_spilt_num,
+                              :, :, spilt_row_num - cur_row_num - 1,
+                              spilt_col_num - cur_col_num - 1] = w_array[
+                    :, :, stride * cur_row_num + cur_spilt_num // stride,
+                    stride * cur_col_num + cur_spilt_num % stride]
 
     return trans_w_array
 
