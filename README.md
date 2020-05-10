@@ -123,6 +123,7 @@ To help the users to experiment with their own data, we also provide some auxili
 2. Accelerating Generative Neural Networks on Unmodified Deep Learning Processors - A Software Approach 
 
 If you find Deep Compression useful in your research, please consider citing the paper:
+
 @inproceedings{xu2018fcn,
   title={Fcn-engine: Accelerating deconvolutional layers in classic cnn processors},
   author={Xu, Dawen and Tu, Kaijie and Wang, Ying and Liu, Cheng and He, Bingsheng and Li, Huawei},
@@ -131,6 +132,7 @@ If you find Deep Compression useful in your research, please consider citing the
   year={2018},
   organization={ACM}
 }
+
 @misc{xu2019accelerating,
     title={Accelerating Generative Neural Networks on Unmodified Deep Learning Processors -- A Software Approach},
     author={Dawen Xu and Ying Wang and Kaijie Tu and Cheng Liu and Bingsheng He and Lei Zhang},
