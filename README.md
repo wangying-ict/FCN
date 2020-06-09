@@ -11,7 +11,7 @@ over the baseline implementation. Since the native deconvolution (transpose conv
 supported on Google Edge TPU, we implement the deconvolution using the well-known zero padding 
 on input activations which is also included in the repo.
 
-Paper Preprint:https://arxiv.org/abs/1907.01773
+Paper Preprint:https://arxiv.org/abs/1907.01773, accepted by IEEE Transactions on Computer, 2020.
 
 
 ## Prerequisites
@@ -120,7 +120,7 @@ To help the users to experiment with their own data, we also provide some auxili
 
 **Related Papers**
 1. Fcn-engine: Accelerating Deconvolutional Layers in Classic CNN Processors (ICCAD'18)
-2. Accelerating Generative Neural Networks on Unmodified Deep Learning Processors - A Software Approach 
+2. Accelerating Generative Neural Networks on Unmodified Deep Learning Processors - A Software Approach (IEEE TC)
 
 If you find Deep Compression useful in your research, please consider citing the paper:
 
@@ -136,9 +136,8 @@ If you find Deep Compression useful in your research, please consider citing the
 @misc{xu2019accelerating,
     title={Accelerating Generative Neural Networks on Unmodified Deep Learning Processors -- A Software Approach},
     author={Dawen Xu and Ying Wang and Kaijie Tu and Cheng Liu and Bingsheng He and Lei Zhang},
-    year={2019},
-    eprint={1907.01773},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+    booktitle={Transactions on Computers},
+    year={2020},
+    organization={IEEE}
 }
 
