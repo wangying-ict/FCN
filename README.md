@@ -1,4 +1,4 @@
-# Split-Deconvolution
+# Split-Deconvolution - An implementation of accelerated Deonvolution operation
 This repo mainly includes two parts. In the first part, we present the python script that 
 converts the deconvolution to standard convolution. Then we compare the results calculated using 
 the split deconvolution and that calculated using Tensorflow transpose function. The comparison 
